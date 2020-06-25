@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- フォントの色 黒 -->
+    <color name="font_color_black">#5E5E5E</color>
+    <!-- フォント オレンジ -->
+    <color name="font_color_orange">#FF9900</color>
+    <!-- background body -->
+    <color name="background_light_gray">#EBEBEB</color>
+    <!-- background header, footer -->
+    <color name="background_dark_gray">#E5E5E5</color>
+    <!-- background 区切り線 -->
+    <color name="background_border">#838383</color>
+    <!-- background 透過 -->
+    <color name="background_transparent">#00E5E5E5</color>
+</resources>

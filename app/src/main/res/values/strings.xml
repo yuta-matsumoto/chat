@@ -1,0 +1,11 @@
+<!-- 定数管理ファイル -->
+<resources>
+    <!-- アプリ名 -->
+    <string name="app_name">Chat</string>
+    <!-- チャット一覧画面 -->
+    <string name="chat_list_subject_label">CHATS</string>
+    <string name="chat_list_delete_button_color">#FF9900</string>
+    <string name="chat_list_delete_button_label">DELETE</string>
+    <string name="delete_dialog_message">このチャット履歴を削除しても\nよろしいでしょうか？</string>
+    <string name="delete_dialog_list_tag">chatList</string>
+</resources>
