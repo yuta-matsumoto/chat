@@ -12,4 +12,8 @@
     <color name="background_border">#838383</color>
     <!-- background 透過 -->
     <color name="background_transparent">#00E5E5E5</color>
+    <!-- background オレンジのボタン -->
+    <color name="background_orange_button">#FF9900</color>
+    <!-- background チャットテキストエリア -->
+    <color name="background_white">#FFFFFF</color>
 </resources>

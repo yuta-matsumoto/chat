@@ -3,13 +3,11 @@ package com.example.chat.models;
 /**
  * 一行分のデータモデルクラス
  */
-public class ChatRowData {
+public class ChatListRowData {
     private String name;
     private String text;
     private String messageDateTime;
     private int profileImageId;
-    private String dateLineDate;
-    private boolean changeDateFlg;
 
     public String getName() {
         return name;
@@ -41,21 +39,5 @@ public class ChatRowData {
 
     public void setProfileImageId(int profileImageId) {
         this.profileImageId = profileImageId;
-    }
-
-    public String getDateLineDate() {
-        return dateLineDate;
-    }
-
-    public void setDateLineDate(String dateLineDate) {
-        this.dateLineDate = dateLineDate;
-    }
-
-    public boolean getChangeDateFlg() {
-        return changeDateFlg;
-    }
-
-    public void setChangeDateFlg(boolean changeDateFlg) {
-        this.changeDateFlg = changeDateFlg;
     }
 }

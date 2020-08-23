@@ -8,17 +8,17 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.chat.R;
-import com.example.chat.models.ChatRowData;
+import com.example.chat.models.ChatListRowData;
 
 import java.util.List;
 
 /**
  * チャット一覧表示に使用するAdapterクラス
  */
-public class ChatListAdapter extends RecyclerView.Adapter<ViewHolder> {
-    private List<ChatRowData> list;
+public class ChatListAdapter extends RecyclerView.Adapter<ChatListViewHolder> {
+    private List<ChatListRowData> list;
 
-    public ChatListAdapter(List<ChatRowData> list) {
+    public ChatListAdapter(List<ChatListRowData> list) {
         this.list = list;
     }
 
@@ -26,10 +26,10 @@ public class ChatListAdapter extends RecyclerView.Adapter<ViewHolder> {
      * チャット一覧のViewHolderを作成する
      */
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ChatListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // 一行分のlayoutをViewに読み込む
         View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.chat_list_row, parent, false);
-        final ViewHolder vh = new ViewHolder(inflate);
+        final ChatListViewHolder vh = new ChatListViewHolder(inflate);
 
         // クリックリスナーを登録
         inflate.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +57,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ViewHolder> {
      * ViewHolder内のViewにチャット一覧Listのデータをbindする
      */
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ChatListViewHolder holder, int position) {
         String messageDateTime = list.get(position).getMessageDateTime();
         holder.nameView.setText(list.get(position).getName());
         holder.textView.setText(list.get(position).getText());
@@ -76,7 +76,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ViewHolder> {
     /**
      * ChatListFragmentでoverrideして処理させる
      */
-    public void onItemClick(View view, int pos, List<ChatRowData> list) {
+    public void onItemClick(View view, int pos, List<ChatListRowData> list) {
         ;
     }
 

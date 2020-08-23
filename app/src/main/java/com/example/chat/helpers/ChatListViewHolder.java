@@ -12,13 +12,13 @@ import com.example.chat.R;
  * ViewHolderクラス
  * 一行分を構成するViewを定義しておく
  */
-public class ViewHolder extends RecyclerView.ViewHolder {
+public class ChatListViewHolder extends RecyclerView.ViewHolder {
     public TextView nameView;
     public TextView textView;
     public TextView timeView;
     public ImageView profileView;
 
-    public ViewHolder(View itemView) {
+    public ChatListViewHolder(View itemView) {
         super(itemView);
         nameView = itemView.findViewById(R.id.name);
         textView = itemView.findViewById(R.id.text);

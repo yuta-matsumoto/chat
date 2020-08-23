@@ -1,7 +1,5 @@
 package com.example.chat.models;
 
-
-
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.Serializable;
@@ -12,16 +10,16 @@ import java.util.List;
  * 削除したい行のデータを詰める
  */
 public class DeleteChatRowData implements Serializable {
-    private List<ChatRowData> list;
+    private List<ChatListRowData> list;
     private RecyclerView.Adapter adapter;
     private int position;
     private int itemCount;
 
-    public List<ChatRowData> getList() {
+    public List<ChatListRowData> getList() {
         return list;
     }
 
-    public void setList(List<ChatRowData> list) {
+    public void setList(List<ChatListRowData> list) {
         this.list = list;
     }
 
