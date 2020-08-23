@@ -114,7 +114,7 @@ public class ChatFragment extends BaseFragment {
         data4.setName("佐藤茂");
         data4.setText("既読無視ですか？？");
         data4.setMessageDateTime("09:00");
-        data4.setProfileImageId(R.drawable.sample1);
+        data4.setProfileImageId(R.drawable.sample2);
         data4.setDateLineDate("2020/6/10");
         data4.setChangeDateFlg(true);
         list.add(data4);
